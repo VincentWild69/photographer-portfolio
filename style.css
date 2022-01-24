@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --dark: #030303;
+  --dark-red: #710707;
+  --gold: #9d8665;
+  --font-18: 18px;
+  --font-22: 22px;
+  --font-28: 28px;
+  --font-32: 32px;
+  --font-80: 80px;
+  --font-merriweather: 'Merriweather', serif;
+  --font-inter: 'Inter', sans-serif;
+
+  --grid-row-gap: 24px;
+  --grid-col-gap: 36px;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --font-18: 16px;
+    --font-22: 20px;
+    --font-28: 24px;
+    --font-32: 28px;
+    --font-80: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --font-18: 16px;
+    --font-22: 18px;
+    --font-28: 20px;
+    --font-32: 22px;
+    --font-80: 40px;
+    --grid-col-gap: 24px; 
+  }
+}
+
+@media screen and (max-width: 420px) {
+  :root {
+    --font-18: 16px;
+    --font-22: 16px;
+    --font-28: 16px;
+    --font-32: 18px;
+    --font-80: 28px;
+  }
+}
+
+/*Default styles begin*/
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #fdfbfb;
+  font-size: var(--font-22);
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline:none;
+  cursor:pointer;
+}
+
+img {
+  display: block;
+}
+/*Default styles end*/
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+
+
+
+.dn {
+  display: none;
+}
